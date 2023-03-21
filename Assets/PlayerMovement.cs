@@ -35,11 +35,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         if (transform.position.y < -20f)
         {
-            SceneManager.LoadScene("Simpe Scene");
+            SceneManager.LoadScene("SampleScene");
         }
-        if (transform.position.x > 150f && transform.position.x < 220f)
+        if (transform.position.x > 1000)
         {
             if (transform.position.z > 0f && transform.position.z < 70f)
             {

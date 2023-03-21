@@ -17,9 +17,25 @@ public class playerstats : MonoBehaviour
         HealthBar.minValue = 0;
         Healthy = Healthymax;
     }
-    private void Update()
+     void Update()
     {
         HealthBar.value = Healthy;
+/*
+        if (transform.position.x > 38 && transform.position.x < 44)
+        {
+            if (transform.position.y > 0 && transform.position.y < 5)
+            {
+                if (transform.position.z > 0 && transform.position.z < 6)
+                {
+                    // Vector3 newPosition = new Vector3(1012.58f, 501.33f, 4.44f);
+                    Vector3 newPosition = new Vector3(100, 100, 100);
+
+                    transform.position = new Vector3(100, 100, 100);
+                    UnityEngine.Debug.Log("a");
+                }
+            }
+        }
+        */
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
@@ -30,31 +46,19 @@ public class playerstats : MonoBehaviour
             RestartGame("SampleScene"); // Call the RestartGame function
         }
 
-        if (transform.position.x > 69 && transform.position.x < 72)
-        {
-            if (transform.position.y > 0 && transform.position.y < 2)
-            {
-                if (transform.position.z > 94 && transform.position.z < 96)
-                {
-                    Vector3 newPosition = new Vector3(156.8f, 0.71f, 32.13f);
-                    transform.position = newPosition;
 
-                }
-            }
-        }
-
-        if (transform.position.x > 154 && transform.position.x < 156)
+      /*  if (transform.position.x > 154 && transform.position.x < 156)
         {
             if (transform.position.y > 1 && transform.position.y < 2)
             {
                 if (transform.position.z > 34 && transform.position.z < 36)
                 {
-                    Vector3 newPosition = new Vector3(72f, 1.56f, 87.69f);
+                    Vector3 newPosition = new Vector3(47.6f, 1.77f, 4.44f);
                     transform.position = newPosition;
 
                 }
             }
-        }
+        }*/
         // Find the game object representing the portal
         GameObject portalA = GameObject.Find("PlayerPortalA");
 
