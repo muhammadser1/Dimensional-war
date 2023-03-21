@@ -86,15 +86,15 @@ public class playerstats : MonoBehaviour
           }
           */
 
-        if (transform.position.z > 60 && transform.position.z < 62 && potionred05counter == 0)
+        if (transform.position.z > 29 && transform.position.z < 31 && potionred05counter == 0)
         {
             if (transform.position.y > 0 && transform.position.y < 2)
             {
-                if (transform.position.x > 81 && transform.position.x < 83)
+                if (transform.position.x > 40 && transform.position.x < 42)
                 {
                     potionred05counter++;
                     Heal(10f); // Call the Heal function and pass in a value of 10
-                    GameObject cube = GameObject.Find("potionred05"); // Find the game object named "CUBA"
+                    GameObject cube = GameObject.Find("Bottle_Health1"); // Find the game object named "CUBA"
                     Destroy(cube); // Destroy the "CUBA" game object
                 }
             }
