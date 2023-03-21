@@ -60,7 +60,7 @@ public class playerstats : MonoBehaviour
             }
         }*/
         // Find the game object representing the portal
-        GameObject portalA = GameObject.Find("PlayerPortalA");
+        GameObject portalA = GameObject.Find("PortalTestA");
 
         // Check if the portal object was found successfully
         if (portalA != null)
@@ -68,10 +68,10 @@ public class playerstats : MonoBehaviour
             // If the '1' key is pressed, move the portal to position (100, 100, 100)
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                portalA.transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+                portalA.transform.position = new Vector3(transform.position.x, 3.4f, transform.position.z);
             }
         }
-        GameObject portalB = GameObject.Find("PlayerPortalB");
+        GameObject portalB = GameObject.Find("PortalTestB");
 
         // Check if the portal object was found successfully
         if (portalB != null)
@@ -79,7 +79,7 @@ public class playerstats : MonoBehaviour
             // If the '1' key is pressed, move the portal to position (100, 100, 100)
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                portalB.transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+                portalB.transform.position = new Vector3(transform.position.x, 3.4f, transform.position.z);
             }
         }
         /*  if (transform.position.z > 20)
